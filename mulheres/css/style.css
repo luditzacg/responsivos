@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+    box-shadow: 0px 4px 3px -2px rgba(0, 0, 0, 0.15);
+}
+
+.menu {
+    display: flex;
+    
+    justify-content: flex-end;
+    list-style: none;
+    
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 0 0 5%;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: #5d125d;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logo {
+    width: 20%;
+}
+
+.conteudo {
+    width: 100%;
+    margin-top: 5%;
+}
+
+.conteudo__container {
+    margin: 0 auto;
+    width: 62%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nome {
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+.foto {
+    margin: 0 auto;
+    display: block;
+    width: 40%;
+    border-radius: 50%;
+}
+
+.artigo {
+    width: 62%;
+}
+
+.autora {
+    width: 40%;
+    text-align: center;
+}
+
+.rodape {
+    width: 100vw;
+    background-color: #a9a9a9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+}
+
+.logo--pequeno {
+    width: 8%;
+    padding: 1%;
+}
+
+@media (max-width: 768px) {
+    .navegacao {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .logo {
+        width: 35%;
+    }
+
+    .menu {
+        display: flex;
+        width: 80%;
+        justify-content: flex-end;
+        font-size: 70%;
+    }
+
+    .conteudo__container {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .autora {
+        width: 90%;
+        font-size: 16px;
+        color: #5d125d;
+        margin-top: 20%;
+    }
+
+    .artigo > h3 {
+        text-align: center;
+        font-size: 19px;
+    }
+
+    .artigo > ol {
+        text-align: justify;
+        font-size: 17px;
+    }
+
+    .artigo > p {
+        text-align: justify;
+        font-size: 13px;
+    }
+
+    .rodape {
+        width: 100%;
+        position: fixed;
+        font-size: 12px;
+    }
+
+    .logo--pequeno {
+        width: 20%;
+    }
+}
+
